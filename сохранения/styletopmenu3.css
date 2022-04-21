@@ -1,0 +1,37 @@
+h1 {
+    color: #000;
+}
+body{
+    background-color: #F4FBFF;
+}
+.obshii{
+    width: 100%;
+    min-height: 300px;
+    border: solid 2px #000;
+}
+.bloki1{
+    width: 100%;
+    height: 35px;
+    display: block;
+    border: solid 2px rgb(125, 245, 65);
+    background-color: #A4E2FD;
+}
+.bloki2{
+    width: 100%;
+    height: 132px;
+    display: block;
+    border: solid 2px rgb(104, 114, 99);
+    background: url(./neptfoto.jpg) no-repeat center top;
+}
+.bloki3{
+    width: 100%;
+    height: 132px;
+    display: block;
+    border: solid 2px rgb(225, 86, 48);
+}
+ul.menu {
+    display: flex;
+}
+.menu li{
+margin-left: 20px;
+}

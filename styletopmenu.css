@@ -319,11 +319,16 @@ body{
     max-width: 250px;
     max-height: 400px;
     margin: 8px;
-    background: rgb(202, 242, 250);
+    background: rgb(241, 254, 254);
     border-radius: 5px;
     overflow: hidden;
     font-family: montserrat;
     text-decoration: none;
+    padding: 5px 8px;
+
+  }
+  .card-mini:hover{
+    box-shadow: 0 0 5px rgb(155, 205, 214);
   }
   .card-foto{
     display: flex;
@@ -340,6 +345,27 @@ body{
     transform: scale(1.1);
   }
   .card-nazvanie{
-
+    font-size: 20px;
+    max-height: 46px;
+    overflow: hidden;
   }
-  card-stoimost card-akcia
+  .card-nazvanie a{
+    text-decoration: none;
+    color: #000;
+    padding: 2px 2px
+  }
+  .card-stoimost{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 6px;
+    padding: 4px 4px 4px 4px;
+  }
+  .card-akcia::before{
+    content: 'АКЦИЯ';
+    font-style: italic;
+    background: #fffc00;
+    padding: 2px 3px;
+    border-radius: 3px;
+    text-shadow: 0 0 1px #897f72;
+    font-weight: normal;
+  }

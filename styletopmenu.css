@@ -245,7 +245,7 @@ body{
     position: absolute;
     top: 170px;
     right: 10px;
-    background: rgb(174, 234, 251);
+    background: rgb(166, 234, 246);
     padding: 5px;
     border-radius: 30px;
     opacity: 0;
@@ -253,18 +253,36 @@ body{
     z-index: 1;
   }
   .card:hover{
-    box-shadow: 0 0 5px rgb(155, 205, 214);
+    box-shadow: 0 0 5px rgb(132, 229, 246);
   }
   .card:hover .card-heart{
     opacity: 1;
   }
+  .card-sravni{
+    position: absolute;
+    top: 170px;
+    left: 8px;
+    background: rgb(174, 234, 251);
+    padding: 5px;
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity .5s ease-in;
+    z-index: 1;
+  }
+  .card-sravni:hover{
+    box-shadow: 0 0 5px rgb(166, 234, 246);
+  }
+  .card:hover .card-sravni{
+    opacity: 1;
+  }
+
   .card-shopping {
     text-decoration: none;
     display: inline-block;
     padding: 15px 30px;
     margin: 10px 20px;
     border-radius: 10px;
-    box-shadow: 0 0 40px 40px #10cde1 inset, 0 0 0 0 #10cde1;
+    box-shadow: 0 0 40px 40px #55ccd9 inset, 0 0 0 0 #55ccd9;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
@@ -272,8 +290,8 @@ body{
     transition: .15s ease-in-out;
   }
   .card-shopping:hover {
-    box-shadow: 0 0 10px 0 #10cde1 inset, 0 0 10px 4px #10cde1;
-    color: #10cde1;
+    box-shadow: 0 0 10px 0 #55ccd9 inset, 0 0 10px 4px #55ccd9;
+    color: #55ccd9;
   }
   .card-shopping a{
     text-decoration: none;
@@ -319,7 +337,7 @@ body{
     max-width: 250px;
     max-height: 400px;
     margin: 8px;
-    background: rgb(241, 254, 254);
+    background: rgb(255, 255, 255);
     border-radius: 5px;
     overflow: hidden;
     font-family: montserrat;
@@ -328,7 +346,7 @@ body{
 
   }
   .card-mini:hover{
-    box-shadow: 0 0 5px rgb(155, 205, 214);
+    box-shadow: 0 0 5px rgb(103, 228, 233);
   }
   .card-foto{
     display: flex;
@@ -348,6 +366,7 @@ body{
     font-size: 20px;
     max-height: 46px;
     overflow: hidden;
+    margin-top: 8px;
   }
   .card-nazvanie a{
     text-decoration: none;
@@ -359,7 +378,12 @@ body{
     font-weight: bold;
     margin-top: 6px;
     padding: 4px 4px 4px 4px;
+    
   }
+  .card-stoimost a{
+    justify-content: space-between;
+  }
+  
   .card-akcia::before{
     content: 'АКЦИЯ';
     font-style: italic;

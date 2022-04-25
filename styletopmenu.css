@@ -28,7 +28,6 @@ body{
     margin-left: 30px;
 }
 
-
 .bloki1-sub3{
     margin-right: 30px;
     display: flex;
@@ -107,6 +106,8 @@ body{
     color: black;
 }
   .d7 {background: #F4FBFF;}
+  .d7 img{
+  }
   .d7:after {content:""; clear:both; display:table}
   .d7 form {
     width: auto;
@@ -119,7 +120,8 @@ body{
     padding-left: 15px;
     border-radius: 42px;
     border: 2px solid #324b4e;
-    background: #F4FBFF;
+     /* background: url(./searchicon.png) no-repeat;  scroll 7px 7px; */
+    /* background: #F4FBFF; */
     outline: none;
     position: relative;
     transition: .3s linear;
@@ -131,18 +133,29 @@ body{
     width: 300px;
   }
   .d7 button {
-    width: 42px;
+    background: url(./searchicon.png) no-repeat;
+    width: 15px;
+    height: 15px;
+    border: none;
+    position: relative;
+    right: 35px;
+    opacity: 50%;
+    /* width: 42px;
     height: 42px;
     background: none;
     border: none;
     position: absolute;
     top: -2px;
-    right: 0;
+    right: 0; */
   }
   .d7 button:before{
-    content: "\f002";
+    /* content: "\f002";
     font-family: FontAwesome;
-    color: #324b4e;
+    color: #324b4e; */
+
+    content: url(./searchicon.png) no-repeat;
+    /* background: url(./searchicon.png) no-repeat;  */
+
   }
   .card{
     display: flex;
@@ -377,13 +390,11 @@ body{
     font-size: 20px;
     font-weight: bold;
     margin-top: 6px;
-    padding: 4px 4px 4px 4px;
-    
+    padding: 4px 4px 4px 4px; 
   }
   .card-stoimost a{
     justify-content: space-between;
   }
-  
   .card-akcia::before{
     content: 'АКЦИЯ';
     font-style: italic;
@@ -393,3 +404,68 @@ body{
     text-shadow: 0 0 1px #897f72;
     font-weight: normal;
   }
+  .footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #c2f3f9;
+  }
+  .footer-container ul{
+    list-style-type: none;
+  }
+  .footer1{
+    display: flex;
+  }
+  .footer1 a:hover{
+    color: #6964f7;
+  }
+  .footer-info a{
+    text-decoration: none;
+    color: #000;
+  }
+  .footer2{
+    display: flex;
+  }
+  .footer2 a:hover{
+    color: #6964f7;
+  }
+  .footer-contacts a{
+    text-decoration: none;
+    color: #000;
+  }
+  .phone-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 30px;
+    align-items: center;
+  }
+  .phone-footer:hover{
+    color: #5650f6;
+  }
+    
+.phone-footer img {
+    height: 15px;
+    opacity: 50%;
+}
+.obratn-zvonok{
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px #fbfefe inset, 0 0 0 0 #f8fdfe;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  transition: .15s ease-in-out;
+}
+.obratn-zvonok:hover {
+  box-shadow: 0 0 10px 0 #fefbfb inset, 0 0 10px 4px #fffcfc;
+  color: #fefefe;
+}
+.obratn-zvonok a{
+  text-decoration: none;
+  color: #000;
+}
